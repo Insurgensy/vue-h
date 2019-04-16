@@ -1,4 +1,6 @@
 <template>
+<div>
+	<app-header></app-header>
 	<div class="columns flex-wrap">
 	  <div class="column" v-for="(post, index) in posts">
 	    <div class="card">
@@ -27,6 +29,7 @@
 	  </div>
 	  
 	</div>
+</div>
 </template>
 <style scoped>
 	.flex-wrap{
@@ -45,9 +48,14 @@
 	}
 </style>
 <script>
+import Header from '@/components/Header'
 	var posts = require('../posts.js')
 
-	module.exports = {
+
+	export default {
+		 components:{
+      'app-header':Header
+    },
 		data: function(){
 			return {
 				posts:posts

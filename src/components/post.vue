@@ -33,7 +33,7 @@
 	</div>
 </template>
 
-<style >
+<style>
 	.content-single{
 		text-align: left;
 		font-family: 'Roboto', sans-serif;
@@ -51,6 +51,7 @@
 		width: 100%;
 		margin-top:20px;
 	}
+	
 </style>
 
 <script>
